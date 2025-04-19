@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora de Carga - Extintores Grapiúna</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <img src="marca_grapiuna_branca.svg" alt="Logo Extintores Grapiúna" class="logo">
+    <h1>Calculadora de Carga</h1>
+    <p class="sub" id="saudacao"></p>
+  </header>
+
+  <main>
+    <div id="itens"></div>
+    <div class="limite-container">
+      <label for="limite">Limite de peso por veículo (kg):</label>
+      <input type="number" id="limite" value="700" min="0">
+    </div>
+    <button onclick="calcular()">Calcular Peso Total</button>
+    <div id="resultado"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Extintores Grapiúna. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+    const saudacaoEl = document.getElementById('saudacao');
+    const hora = new Date().getHours();
+    let saudacao = 'Olá';
+    if (hora >= 5 && hora < 12) saudacao = 'Bom dia';
+    else if (hora >= 12 && hora < 18) saudacao = 'Boa tarde';
+    else saudacao = 'Boa noite';
+    saudacaoEl.innerText = `${saudacao}, Colaborador!`;
+  </script>
+
+
+</body>
+</html>
