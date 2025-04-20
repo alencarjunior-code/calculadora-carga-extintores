@@ -15,8 +15,8 @@ const equipamentos = {
   "AP 10L": 14.180,
   "Mangueira 2.1/2 - 15m": 10.780,
   "Mangueira 1.1/2 - 15m": 5.260,
-  "Mangueira 2.1/2 - 20m": 10.780,
-  "Mangueira 1.1/2 - 20m": 5.260
+  "Mangueira 2.1/2 - 30m": 10.780,
+  "Mangueira 1.1/2 - 30m": 5.260
 };
 
 const container = document.getElementById('itens');
