@@ -12,6 +12,12 @@
     <img src="marca_grapiuna_branca.svg" alt="Logo Extintores Grapiúna" class="logo">
     <h1>Calculadora de Carga</h1>
     <p class="sub" id="saudacao"></p>
+
+
+    <link rel="manifest" href="manifest.json" />
+
+    
+
   </header>
 
   <main>
@@ -39,6 +45,13 @@
     else saudacao = 'Boa noite';
     saudacaoEl.innerText = `${saudacao}, Colaborador!`;
   </script>
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+</script>
 
 
 </body>
