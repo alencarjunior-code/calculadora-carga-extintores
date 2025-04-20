@@ -1,3 +1,4 @@
+
 self.addEventListener("install", e => {
   e.waitUntil(
     caches.open("grapiuna-cache").then(cache => {
@@ -8,6 +9,8 @@ self.addEventListener("install", e => {
         "./script.js",
         "./fundo3.jpg",
         "./logo-extintores.png",
+        "./icon-192.png",
+        "./icon-512.png",
         "./manifest.json"
       ]);
     })
